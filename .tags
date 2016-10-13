@@ -1,0 +1,22 @@
+CmxApiInterface	/vbox/tealProxy/app/Contracts/CmxApi.php	/^interface CmxApiInterface $/;"	interface	line:5
+send	/vbox/tealProxy/app/Contracts/CmxApi.php	/^    public function send($collection, $template);$/;"	function	line:7
+CmxApiInterface	/vbox/tealProxy/app/Contracts/CmxApiInterface.php	/^interface CmxApiInterface$/;"	interface	line:5
+baseUri	/vbox/tealProxy/app/Contracts/CmxApiInterface.php	/^    public function baseUri($collection, $template);$/;"	function	line:7
+ApiServiceProvider	/vbox/tealProxy/app/Providers/ApiServiceProvider.php	/^class ApiServiceProvider extends ServiceProvider$/;"	class	line:7
+register	/vbox/tealProxy/app/Providers/ApiServiceProvider.php	/^    public function register()$/;"	function	line:14
+ApiInterface	/vbox/tealProxy/app/Contracts/ApiInterface.php	/^interface ApiInterface$/;"	interface	line:5
+getClient	/vbox/tealProxy/app/Contracts/ApiInterface.php	/^    public function getClient();$/;"	function	line:7
+SpotApi	/vbox/tealProxy/app/Apis/SpotApi.php	/^class SpotApi$/;"	class	line:5
+client	/vbox/tealProxy/app/Apis/SpotApi.php	/^    protected $client;$/;"	variable	line:8
+__construct	/vbox/tealProxy/app/Apis/SpotApi.php	/^    public function __construct()$/;"	function	line:9
+getClient	/vbox/tealProxy/app/Apis/SpotApi.php	/^    public function getClient()$/;"	function	line:14
+client	/vbox/tealProxy/app/Apis/SpotApi.php	/^      $this->client = new \\GuzzleHttp\\Client(['base_uri' => 'http:\/\/ciscomeraki.riverviewms.com']);$/;"	variable	line:16
+Controller	/vbox/tealProxy/app/Http/Controllers/Controller.php	/^class Controller extends BaseController$/;"	class	line:7
+__construct	/vbox/tealProxy/app/Http/Controllers/Controller.php	/^    public function __construct()$/;"	function	line:11
+ExampleController	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^class ExampleController extends Controller$/;"	class	line:7
+api	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^    protected $api;$/;"	variable	line:9
+__construct	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^    public function __construct(ApiInterface $api)$/;"	function	line:15
+api	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^        $this->api = $api;$/;"	variable	line:18
+index	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^    public function index(){$/;"	function	line:21
+client	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^      $client = $this->api->getClient();$/;"	variable	line:22
+response	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^      $response = $client->get("\/clients");$/;"	variable	line:23

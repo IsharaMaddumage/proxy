@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ExampleController	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^class ExampleController extends Controller$/;"	class	line:7
+api	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^    protected $api;$/;"	variable	line:9
+__construct	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^    public function __construct(ApiInterface $api)$/;"	function	line:15
+api	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^        $this->api = $api;$/;"	variable	line:18
+index	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^    public function index(){$/;"	function	line:21
+client	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^      $client = $this->api->getClient();$/;"	variable	line:22
+response	/vbox/tealProxy/app/Http/Controllers/ExampleController.php	/^      $response = $client->get("\/clients");$/;"	variable	line:23
